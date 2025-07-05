@@ -1,13 +1,11 @@
-function Tabuada(numero, inicio=1, fim=10){
-
+$("#btn").click(() => {
+    let num1 = Number($("#num").val())
     let texto = ""
 
-    for(let i = inicio; i <= fim; i++){
-        texto += `${numero} X ${i} = ${numero*i}\n`
+    for(let i = 0; i <= 10; i++){
+        texto += `${num1} X ${i} = ${num1*i}\n`
     }
-    alert(texto)
-}
 
-Tabuada(3, 2, 6)
+    $("#txtarea").val(texto)
 
-// Criei um comentario no github
+})
